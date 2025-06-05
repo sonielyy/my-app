@@ -1,0 +1,64 @@
+.why-europe-section {
+    padding: 80px 24px;
+    background-color: #f9f9fb;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color: #1a1a1a;
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    max-width: 280px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  .card-link {
+    font-size: 14px;
+    color: #7d4dff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }
+  

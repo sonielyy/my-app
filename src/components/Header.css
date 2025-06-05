@@ -1,0 +1,157 @@
+.header {
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 24px 24px; /* ⬅️ YÜKSEKLİK ARTIRILDI — Burayı değiştirdin */
+    /* ↑ Daha fazla dikey boşluk için padding-top ve padding-bottom artırıldı */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  
+  .nav-container {
+    max-width: 1750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-group {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* ← Logo ile nav-links arasındaki boşluğu kontrol edersin */
+  }
+  
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    margin-left: 100px;
+  }
+  
+  .logo-text {
+    font-weight: 600;
+    font-size: 20px;
+    color: #111;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+    margin-left: 150px; /* 40px → 8px gibi bir değer ile logoya yaklaşır */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #3a4656;
+    font-weight: 510;     /* 500 → 600: Daha belirgin */
+    font-size: 18px;      /* 16px → 18px: Daha okunaklı */
+    transition: color 0.2s;
+  }
+  
+  
+  .nav-links li a:hover {
+    color: #5a00c8;
+  }
+  
+  .arrow {
+    font-size: 12px;
+    margin-left: 4px;
+    display: inline-block;
+    transition: transform 0.3s ease; /* ← animasyon eklendi */
+  }
+  
+  .nav-links li:hover .arrow {
+    transform: rotate(180deg); /* hover olduğunda dönsün */
+  }
+  
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .contact-button {
+    background-color: #7d4dff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color: #692de0;
+  }
+  
+
+/* HIZMETLERIMIZ DROPDOWN */
+.dropdown {
+    position: relative; /* bu zaten var, kalmalı */
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0; /* Bu, şimdi doğru çünkü dropdown <li> ile hizalanacak */
+    /* Geliştirme için alternatif: sola tam hizalamak yerine */
+    /* left: 50%;
+       transform: translateX(-50%);
+       ile ortalayabilirsin */
+  
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    padding: 12px 0;
+    min-width: 200px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    z-index: 999;
+    transform: translateY(10px);
+  }
+  
+  /* Hover olduğunda gösterim */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Liste elemanları */
+  .dropdown-menu li {
+    list-style: none; /* o çirkin noktaları kaldırır */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Link stilleri */
+  .dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+    border-radius: 4px;
+  }
+  
+  /* Hover efekti */
+  .dropdown-menu li a:hover {
+    background-color: #f2f2f2;
+    color: #5a00c8;
+  }
+  
+  
