@@ -2,7 +2,7 @@
 import spainImg from '../assets/countries/spain-hero.jpg';
 import portugalImg from '../assets/countries/portugal-hero.jpg';
 import irelandImg from '../assets/countries/ireland-hero.jpg';
-import greeceImg from '../assets/countries/greece-hero.jpg';
+import greeceImg from '../assets/countries/greek-hero.jpg';
 
 export const countryData = {
   spain: {
