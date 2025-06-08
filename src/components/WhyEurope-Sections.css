@@ -1,0 +1,64 @@
+.sections-wrapper {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  
+  .section-block {
+    scroll-margin-top: 140px; /* veya header yüksekliğine göre 80px, 100px olabilir */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section-block.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .text-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+  
+  .text-content ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: disc;
+  }
+  
+  .text-content li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+  
+  .image-content {
+    flex: 1;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .section-block,
+    .section-block.reverse {
+      flex-direction: column;
+    }
+  }
+  

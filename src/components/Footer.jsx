@@ -1,5 +1,5 @@
 import './Footer.css';
-import logo from '../assets/logo.svg'; // SVG logonu buraya koy
+import logo from '../assets/logo2.png'; // Place your SVG logo here
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 function Footer() {
@@ -8,39 +8,39 @@ function Footer() {
       <div className="footer-top">
         <div className="footer-left">
           <div className="footer-logo">
-            <img src={logo} alt="NovaCitizens" />
-            <span>NovaCitizens</span>
+            <img src={logo} alt="MyEuropeanPassport" />
+            <span>My European Passport</span>
           </div>
-          <p>Yeni gelişmelerimizden haberdar olmak için abonelik oluşturun</p>
+          <p>Subscribe to stay updated with our latest news and services.</p>
           <div className="subscribe-form">
             <input type="email" placeholder="Enter your email" />
             <button>Subscribe</button>
           </div>
           <small>
-            We care about your data in our <a href="#">privacy policy</a>.
+            We care about your data. Read our <a href="#">privacy policy</a>.
           </small>
         </div>
 
         <div className="footer-links">
           <div className="link-group">
-            <h4>Kurumsal</h4>
-            <a href="#">Hakkımızda</a>
-            <a href="#">Hizmetlerimiz</a>
-            <a href="#">Ekibimiz</a>
-            <a href="#">Sertifikalar</a>
-            <a href="#">Kariyer</a>
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Our Services</a>
+            <a href="#">Our Team</a>
+            <a href="#">Certifications</a>
+            <a href="#">Careers</a>
           </div>
 
           <div className="link-group">
-            <h4>Kaynaklar</h4>
+            <h4>Resources</h4>
             <a href="#">Blog</a>
-            <a href="#">İş Ortaklarımız</a>
-            <a href="#">Basında Biz</a>
-            <a href="#">Yardım & Destek</a>
+            <a href="#">Partners</a>
+            <a href="#">Press</a>
+            <a href="#">Help & Support</a>
           </div>
 
           <div className="link-group">
-            <h4>Sosyal Medya</h4>
+            <h4>Social Media</h4>
             <a href="#"><FaFacebookF /> Facebook</a>
             <a href="#"><FaInstagram /> Instagram</a>
             <a href="#"><FaTwitter /> Twitter</a>
@@ -50,7 +50,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 NovaCitizens. All rights reserved.</p>
+        <p>© 2025 MyEuropeanPassport. All rights reserved.</p>
         <div className="footer-bottom-links">
           <a href="#">Terms</a>
           <a href="#">Privacy</a>

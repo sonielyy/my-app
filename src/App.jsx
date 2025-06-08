@@ -1,24 +1,29 @@
+// App.jsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop'; // ✅ ScrollToTop import
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
-import WhyEurope from './components/WhyEurope';
-import Countries from './components/Countries';
-import Testimonials from './components/Testimonials';
+
+// These pages will be routed
+import Home from './pages/Home';
+import WhyEuropePage from './pages/WhyEuropePage';
+import CountryPage from './pages/CountryPage';
 
 function App() {
   return (
-    <>
+    <Router>
+      <ScrollToTop /> {/* ✅ Buraya ekliyoruz: Router içinde, Routes'tan önce */}
       <Header />
       <main>
-        <HeroSection />
-        <WhyEurope />
-        <Countries />
-        <Testimonials />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/why-europe" element={<WhyEuropePage />} />
+          <Route path="/countries/:countrySlug" element={<CountryPage />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </Router>
   );
 }
-
 
 export default App;

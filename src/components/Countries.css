@@ -19,18 +19,19 @@
   }
   
   .country-card {
-    max-width: 220px;
+    max-width: 280px;
     padding: 24px;
     background-color: #f9f9fb;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); /* 💥 Daha derin gölge */
     transition: transform 0.3s ease;
   }
   
   .country-card:hover {
-    transform: translateY(-6px);
+    transform: scale(1.05); /* %5 büyür */
   }
+  
   
   .country-flag {
     width: 100px;

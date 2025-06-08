@@ -3,45 +3,46 @@ import ireland from '../assets/flags/ireland.png';
 import spain from '../assets/flags/spain.png';
 import italy from '../assets/flags/italy.png';
 import germany from '../assets/flags/germany.png';
+import { Link } from 'react-router-dom';
 
 function Countries() {
   const countries = [
     {
-      name: 'İrlanda',
+      name: 'Ireland',
       flag: ireland,
-      description: 'Yüksek yaşam kalitesi ve teknoloji yatırımlarıyla öne çıkıyor.',
-      link: '/ulkeler/irlanda',
+      description: 'Known for its high quality of life and strong tech-driven economy.',
+      link: '/countries/ireland',
     },
     {
-      name: 'İspanya',
+      name: 'Spain',
       flag: spain,
-      description: 'Sıcak iklimi ve sosyal yaşamıyla göçmenler için cazip bir ülke.',
-      link: '/ulkeler/ispanya',
+      description: 'A warm climate, vibrant culture, and a welcoming lifestyle for expats.',
+      link: '/countries/spain',
     },
     {
-      name: 'İtalya',
+      name: 'Italy',
       flag: italy,
-      description: 'Kültürel mirası ve estetik şehirleriyle hayat dolu bir Avrupa ülkesi.',
-      link: '/ulkeler/italya',
+      description: 'Rich in culture and history, offering timeless cities and relaxed living.',
+      link: '/countries/italy',
     },
     {
-      name: 'Almanya',
+      name: 'Germany',
       flag: germany,
-      description: 'Güçlü ekonomisi ve istihdam olanaklarıyla Avrupa’nın kalbi.',
-      link: '/ulkeler/almanya',
+      description: 'The economic powerhouse of Europe, with top-tier infrastructure and job opportunities.',
+      link: '/countries/germany',
     },
   ];
 
   return (
     <section className="countries-section">
-      <h2 className="section-title">Ülkeler</h2>
+      <h2 className="section-title">Explore EU Countries</h2>
       <div className="country-grid">
         {countries.map((country, index) => (
           <div className="country-card" key={index}>
             <img src={country.flag} alt={country.name} className="country-flag" />
             <h3 className="country-name">{country.name}</h3>
             <p className="country-desc">{country.description}</p>
-            <a href={country.link} className="country-link">Detaylar →</a>
+            <a href={country.link} className="country-link">Learn more →</a>
           </div>
         ))}
       </div>
