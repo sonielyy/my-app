@@ -20,12 +20,6 @@ function Countries() {
       link: '/countries/spain',
     },
     {
-      name: 'Italy',
-      flag: italy,
-      description: 'Rich in culture and history, offering timeless cities and relaxed living.',
-      link: '/countries/italy',
-    },
-    {
       name: 'Germany',
       flag: germany,
       description: 'The economic powerhouse of Europe, with top-tier infrastructure and job opportunities.',

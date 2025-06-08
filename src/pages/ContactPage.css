@@ -1,0 +1,121 @@
+.contact-container {
+  position: relative;
+  padding: 60px 20px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden; /* içeri taşmasın */
+}
+
+/* Arka plan resmi */
+.contact-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/form-bg.jpg'); /* 📸 kendi görselin */
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px) brightness(0.5) contrast(1.2); /* 🎯 Blur + Kontrast */
+  z-index: -1;
+}
+
+/* Yarı saydam beyaz overlay */
+.contact-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.85); /* 🎯 Netlik için filtre */
+  z-index: -1;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.info-card .icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  color: #7d4dff;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #f9f9f9;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h2 {
+  margin-bottom: 16px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  padding: 14px 20px;
+  background-color: #7d4dff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #5a00c8;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+
+a.contact-button,
+a.hero-btn {
+  text-decoration: none;
+}
+
+
+.error {
+  color: #e53935;
+  font-size: 14px;
+  margin-top: -12px;
+  margin-bottom: 8px;
+  display: block;
+}

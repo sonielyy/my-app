@@ -1,6 +1,7 @@
 import './Footer.css';
 import logo from '../assets/logo2.png'; // Place your SVG logo here
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -24,16 +25,16 @@ function Footer() {
         <div className="footer-links">
           <div className="link-group">
             <h4>Company</h4>
-            <a href="#">About Us</a>
-            <a href="#">Our Services</a>
-            <a href="#">Our Team</a>
+            <Link to="/about">About Us</Link>
+            <Link to="/services/education">Our Services</Link>
+            <Link to="/team">Our Team</Link>
             <a href="#">Certifications</a>
             <a href="#">Careers</a>
           </div>
 
           <div className="link-group">
             <h4>Resources</h4>
-            <a href="#">Blog</a>
+            <Link to="/blog">Blog</Link>
             <a href="#">Partners</a>
             <a href="#">Press</a>
             <a href="#">Help & Support</a>

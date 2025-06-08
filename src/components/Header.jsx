@@ -1,50 +1,58 @@
 import './Header.css';
-import logo from '../assets/logo2.png'; // Logo görselini burada kullanabilirsin (örnek olarak)
+import logo from '../assets/logo2.png';
 import { Link } from 'react-router-dom';
-
+import { countryData } from '../data/countryData'; // ✅ Dinamik ülke listesi
 
 function Header() {
   return (
     <header className="header">
       <nav className="nav-container">
-      <div className="nav-left"> {/* Logo */}
-        <div className="logo-section">
-          <img src={logo} alt="Logo" className="logo-img" />
-          <span className="logo-text">My European Passport</span>
+        <div className="nav-left">
+          <div className="logo-section">
+            <img src={logo} alt="Logo" className="logo-img" />
+            <span className="logo-text">My European Passport</span>
+          </div>
         </div>
-      </div>
 
-      <div className="nav-center"> {/* NAV LINKS */}
-      <ul className="nav-links">
-      <li><Link to="/">Home</Link></li>
+        <div className="nav-center">
+          <ul className="nav-links">
+            <li><Link to="/">Home</Link></li>
 
-      <li className="dropdown">
-        <a href="#">Services <span className="arrow">▼</span></a>
-        <ul className="dropdown-menu">
-          <li><a href="#">Citizenship with University Degree</a></li>
-          <li><a href="#">Citizenship with Investment</a></li>
-          <li><a href="#">Citizenship with Entrepreneurship</a></li>
-        </ul>
-      </li>
+            <li className="dropdown">
+              <a href="#">Services <span className="arrow">▼</span></a>
+              <ul className="dropdown-menu">
+                <li><Link to="/services/education">Citizenship with University Degree</Link></li>
+                <li><Link to="/services/investment">Citizenship with Investment</Link></li>
+                <li><Link to="/services/entrepreneurship">Citizenship with Entrepreneurship</Link></li>
+              </ul>
+            </li>
 
+            <li className="dropdown">
+              <a href="#">Company <span className="arrow">▼</span></a>
+              <ul className="dropdown-menu">
+                <li><Link to="/about">About Us</Link></li>
+                <li><Link to="/team">Our Team</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
+              </ul>
+            </li>
 
-        <li className="dropdown">
-          <a href="#">Company <span className="arrow">▼</span></a>
-          <ul className="dropdown-menu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Blog</a></li>
+            <li className="dropdown">
+              <a href="#">Countries <span className="arrow">▼</span></a>
+              <ul className="dropdown-menu">
+                {Object.entries(countryData).map(([slug, country]) => (
+                  <li key={slug}>
+                    <Link to={`/countries/${slug}`}>{country.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
           </ul>
-        </li>
-      <li><a href="#">References</a></li>
-      </ul>
+        </div>
 
-      </div>
-
-      <div className="nav-right"> {/* Buton */}
-        <button className="contact-button">Contact Us</button>
-      </div>
-    </nav>
+        <div className="nav-right">
+          <Link to="/contact" className="contact-button">Contact Us</Link>
+        </div>
+      </nav>
     </header>
   );
 }

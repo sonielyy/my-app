@@ -1,0 +1,17 @@
+/* src/pages/CompanyPages.css */
+.static-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.static-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.static-page p {
+  font-size: 18px;
+  line-height: 1.6;
+}
