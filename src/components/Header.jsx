@@ -19,15 +19,6 @@ function Header() {
             <li><Link to="/">Home</Link></li>
 
             <li className="dropdown">
-              <a href="#">Services <span className="arrow">▼</span></a>
-              <ul className="dropdown-menu">
-                <li><Link to="/services/education">Citizenship with University Degree</Link></li>
-                <li><Link to="/services/investment">Citizenship with Investment</Link></li>
-                <li><Link to="/services/entrepreneurship">Citizenship with Entrepreneurship</Link></li>
-              </ul>
-            </li>
-
-            <li className="dropdown">
               <Link to="/countries">Countries <span className="arrow">▼</span></Link>
               <ul className="dropdown-menu">
                 {Object.entries(countryData).map(([slug, country]) => (

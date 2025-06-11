@@ -126,6 +126,8 @@ body {
   padding: 16px;
   min-width: 300px;    /* ✅ Genişlik buradan ayarlanır */
   max-width: 500px;    /* 🔒 Aşırı uzamasın diye */
+  max-height: 300px; /* 🧱 Maksimum yükseklik belirleniyor */
+  overflow-y: auto;  /* 📜 Dikey kaydırma aktif */
   width: 100%;         /* bu değer sayesinde responsive kalır */
   display: block;        /* ✅ Display none yerine hep açık */
   opacity: 0;
