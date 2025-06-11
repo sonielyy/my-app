@@ -3,6 +3,10 @@ import ireland from '../assets/flags/ireland.png';
 import spain from '../assets/flags/spain.png';
 import italy from '../assets/flags/italy.png';
 import germany from '../assets/flags/germany.png';
+import france from '../assets/flags/france.png';
+import netherlands from '../assets/flags/netherlands.png';
+import sweden from '../assets/flags/sweden.png';
+import austria from '../assets/flags/austria.png';
 import { Link } from 'react-router-dom';
 
 function Countries() {
@@ -25,6 +29,36 @@ function Countries() {
       description: 'The economic powerhouse of Europe, with top-tier infrastructure and job opportunities.',
       link: '/countries/germany',
     },
+    {
+      name: 'France',
+      flag: france,
+      description: 'Renowned for its culture, healthcare system, and quality of life.',
+      link: '/countries/france',
+    },
+    {
+      name: 'Netherlands',
+      flag: netherlands,
+      description: 'Highly international, progressive, and great for entrepreneurs.',
+      link: '/countries/netherlands',
+    },
+    {
+      name: 'Sweden',
+      flag: sweden,
+      description: 'Famous for sustainability, social equality, and innovation.',
+      link: '/countries/sweden',
+    },
+    {
+      name: 'Austria',
+      flag: austria,
+      description: 'Combines natural beauty with high living standards and safety.',
+      link: '/countries/austria',
+    },
+    {
+      name: 'Italy',
+      flag: italy,
+      description: 'Rich in history, culture, and offers excellent residency options.',
+      link: '/countries/italy',
+    },
   ];
 
   return (
@@ -40,6 +74,13 @@ function Countries() {
           </div>
         ))}
       </div>
+
+      <div className="explore-more-wrapper">
+      <Link to="/countries" className="explore-more-btn">
+        See All 27 Countries →
+      </Link>
+      </div>
+
     </section>
   );
 }

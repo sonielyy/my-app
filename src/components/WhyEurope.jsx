@@ -1,46 +1,76 @@
 import './WhyEurope.css';
-import economy from '../assets/economy.svg';
-import life from '../assets/life.svg';
+import citizen from '../assets/citizen.svg';
 import education from '../assets/education.svg';
-import culture from '../assets/culture.svg';
+import healthcare from '../assets/health.svg';
+import business from '../assets/business.svg';
+import retirement from '../assets/retirement.svg';
+import lgbtq from '../assets/lgbtq.svg';
+import family from '../assets/family.svg';
+import quality from '../assets/quality.svg';
 
 function WhyEurope() {
-  
   const reasons = [
     {
-      icon: economy,
-      title: 'Economic Security',
+      icon: citizen,
+      title: 'Become a European Citizen',
       description:
-        'EU countries offer strong social systems, high employment potential, and stable economies.',
-      link: '/why-europe#economic-security',
-    },
-    {
-      icon: life,
-      title: 'Quality of Life',
-      description:
-        'From clean environments to world-class healthcare and safe cities — Europe offers peace of mind.',
-      link: '/why-europe#quality-of-life',
+        'Gain full rights to live, work, study, and retire across 27 EU countries.',
+      link: '/benefits#become-a-european-citizen',
     },
     {
       icon: education,
-      title: 'World-Class Education',
+      title: 'Free or Affordable Education',
       description:
-        'European universities offer high-quality, globally recognized programs for international students.',
-      link: '/why-europe#world-class-education',
+        'Access world-class education in Europe with little or no tuition fees.',
+      link: '/benefits#free-or-affordable-education',
     },
     {
-      icon: culture,
-      title: 'Cultural Diversity',
+      icon: healthcare,
+      title: 'Universal Healthcare Access',
       description:
-        'Europe’s rich mix of cultures fuels personal growth and a globally connected lifestyle.',
-      link: '/why-europe#cultural-diversity',
+        'Benefit from top-tier healthcare systems across the EU with minimal costs.',
+      link: '/benefits#free-or-affordable-healthcare',
+    },
+    {
+      icon: business,
+      title: 'Business & Entrepreneurship',
+      description:
+        'Launch or move your business across the EU’s seamless single market.',
+      link: '/benefits#founding-or-relocating-a-business-in-europe',
+    },
+    {
+      icon: retirement,
+      title: 'Elder-Friendly Living',
+      description:
+        'Enjoy retirement with strong social services and age-friendly communities.',
+      link: '/benefits#elder-friendly-environment',
+    },
+    {
+      icon: lgbtq,
+      title: 'LGBTQ+ Friendly Societies',
+      description:
+        'Live safely and openly in progressive, inclusive European cultures.',
+      link: '/benefits#lgbtq+-friendly-societies',
+    },
+    {
+      icon: family,
+      title: 'Family-Oriented Environment',
+      description:
+        'Raise your children in safe, supportive, and child-friendly societies.',
+      link: '/benefits#child-&-family-friendly-environment',
+    },
+    {
+      icon: quality,
+      title: 'High Quality of Life',
+      description:
+        'Experience clean cities, great food, safety, and balanced living.',
+      link: '/benefits#high-quality-of-life',
     },
   ];
-  
 
   return (
     <section className="why-europe-section">
-      <h2 className="section-title">Why Europe?</h2>
+      <h2 className="section-title">Benefits of Citizenship by Descent</h2>
       <div className="cards-container">
         {reasons.map((item, index) => (
           <div className="card" key={index}>

@@ -23,29 +23,17 @@ function Footer() {
         </div>
 
         <div className="footer-links">
-          <div className="link-group">
-            <h4>Company</h4>
-            <Link to="/about">About Us</Link>
-            <Link to="/services/education">Our Services</Link>
-            <Link to="/team">Our Team</Link>
-            <a href="#">Certifications</a>
-            <a href="#">Careers</a>
-          </div>
 
           <div className="link-group">
             <h4>Resources</h4>
             <Link to="/blog">Blog</Link>
-            <a href="#">Partners</a>
-            <a href="#">Press</a>
-            <a href="#">Help & Support</a>
+            <Link to="/contact">Contact Us</Link>
           </div>
 
           <div className="link-group">
             <h4>Social Media</h4>
             <a href="#"><FaFacebookF /> Facebook</a>
             <a href="#"><FaInstagram /> Instagram</a>
-            <a href="#"><FaTwitter /> Twitter</a>
-            <a href="#"><FaLinkedinIn /> LinkedIn</a>
           </div>
         </div>
       </div>
@@ -55,7 +43,6 @@ function Footer() {
         <div className="footer-bottom-links">
           <a href="#">Terms</a>
           <a href="#">Privacy</a>
-          <a href="#">Cookies</a>
         </div>
       </div>
     </footer>

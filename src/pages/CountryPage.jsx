@@ -1,3 +1,5 @@
+// src/pages/CountryPage.jsx
+
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { countryData } from '../data/countryData';
@@ -33,7 +35,7 @@ function CountryPage() {
 
   return (
     <div className="country-page">
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section className="country-hero">
         <img src={data.image} alt={data.name} className="country-hero-image" />
         <div className="country-hero-overlay">
@@ -43,7 +45,7 @@ function CountryPage() {
         </div>
       </section>
 
-      {/* MAIN CONTENT: Progress Bar + Sections */}
+      {/* CONTENT */}
       <section className="country-reasons">
         <div className="country-progress-bar">
           {data.reasons.map((item, index) => (
@@ -65,9 +67,7 @@ function CountryPage() {
               <div className="country-section-text">
                 <h2>{item.title}</h2>
                 <ul>
-                  {Array.isArray(item.text)
-                    ? item.text.map((point, idx) => <li key={idx}>{point}</li>)
-                    : <li>{item.text}</li>}
+                  {item.text.map((point, idx) => <li key={idx}>{point}</li>)}
                 </ul>
               </div>
             </div>

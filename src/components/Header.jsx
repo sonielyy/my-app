@@ -28,16 +28,7 @@ function Header() {
             </li>
 
             <li className="dropdown">
-              <a href="#">Company <span className="arrow">▼</span></a>
-              <ul className="dropdown-menu">
-                <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/team">Our Team</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
-              </ul>
-            </li>
-
-            <li className="dropdown">
-              <a href="#">Countries <span className="arrow">▼</span></a>
+              <Link to="/countries">Countries <span className="arrow">▼</span></Link>
               <ul className="dropdown-menu">
                 {Object.entries(countryData).map(([slug, country]) => (
                   <li key={slug}>
@@ -45,6 +36,11 @@ function Header() {
                   </li>
                 ))}
               </ul>
+            </li>
+
+
+            <li>
+              <Link to="/benefits">Benefits of EU</Link>
             </li>
           </ul>
         </div>

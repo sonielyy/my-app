@@ -1,82 +1,125 @@
 import './WhyEurope-Sections.css';
-import economyImg from '../assets/economy.jpg';
-import lifeImg from '../assets/life.jpg';
-import educationImg from '../assets/education.jpeg';
-import cultureImg from '../assets/culture.jpg';
+import citizenImg from '../assets/citizenship.jpg';
+import educationImg from '../assets/education2.jpeg';
+import healthcareImg from '../assets/health.jpg';
+import businessImg from '../assets/business.jpeg';
+import elderImg from '../assets/retirement.jpeg';
+import lgbtqImg from '../assets/lgbt.jpg';
+import familyImg from '../assets/family.jpg';
+import qualityImg from '../assets/quality.jpg';
 
 const sections = [
-    {
-      title: 'Economic Security',
-      bullets: [
-        'EU countries maintain strong, resilient economies backed by the euro and unified trade policies, providing a stable financial environment.',
-        'Citizens gain the legal right to live and work in any of the 27 EU member states, dramatically expanding career opportunities.',
-        'Comprehensive welfare systems offer unemployment benefits, pensions, and healthcare support for long-term economic protection.',
-      ],
-      image: economyImg,
-      reverse: false,
-    },
-    {
-      title: 'Quality of Life',
-      bullets: [
-        'Universal healthcare, eco-conscious urban planning, and abundant green spaces create a clean, healthy living environment.',
-        'EU nations consistently rank among the safest in the world, with low crime rates and strong civil protections.',
-        'Work-life balance is a cultural norm, supported by generous vacation policies, parental leave, and fair labor regulations.',
-      ],
-      image: lifeImg,
-      reverse: true,
-    },
-    {
-      title: 'World-Class Education',
-      bullets: [
-        'Home to globally renowned institutions like Oxford, Sorbonne, and TU Munich, the EU offers world-leading education across disciplines.',
-        'Many countries offer free or low-cost tuition, making higher education accessible regardless of income.',
-        'Degrees from EU universities are internationally respected, increasing your global mobility and career options.',
-      ],
-      image: educationImg,
-      reverse: false,
-    },
-    {
-      title: 'Cultural Diversity',
-      bullets: [
-        'With 24 official languages and hundreds of regional dialects, the EU is a living classroom of cultural exchange.',
-        'From flamenco in Spain to opera in Italy, cultural life is vibrant and deeply embedded in everyday experience.',
-        'Living in the EU exposes you to a mosaic of traditions, perspectives, and communities, fostering both personal growth and global understanding.',
-      ],
-      image: cultureImg,
-      reverse: true,
-    },
-  ];
-  
+  {
+    title: 'Become a European Citizen',
+    bullets: [
+      'No matter which EU country grants you citizenship, you automatically become a citizen of the European Union as well.',
+      'This gives you the right to live, work, study, and do business in any of the 27 EU member states.',
+      'You can live in France, work in Sweden, retire in Portugal, and enjoy full access to the Union.',
+    ],
+    image: citizenImg,
+    reverse: false,
+  },
+  {
+    title: 'Free or Affordable Education',
+    bullets: [
+      'Education in the EU is largely free or low-cost—not only in your country of citizenship but across the Union.',
+      'You can access universities in other member states often without paying tuition.',
+      'Start your future without student debt and access high-quality education at little to no cost.',
+    ],
+    image: educationImg,
+    reverse: true,
+  },
+  {
+    title: 'Free or Affordable Healthcare',
+    bullets: [
+      'As an EU citizen, you gain access to some of the world’s best public healthcare systems.',
+      'Healthcare is often free or very low-cost, from routine doctor visits to hospital stays.',
+      'EU citizenship protects you from unexpected astronomical medical bills.',
+    ],
+    image: healthcareImg,
+    reverse: false,
+  },
+  {
+    title: 'Founding or Relocating a Business in Europe',
+    bullets: [
+      'You can start or relocate your business anywhere within the European Union.',
+      'Operate across all 27 member states thanks to the EU’s single market.',
+      'Access a workforce of 450+ million people, funding, and a stable regulatory environment.',
+    ],
+    image: businessImg,
+    reverse: true,
+  },
+  {
+    title: 'Elder-Friendly Environment',
+    bullets: [
+      'EU countries offer strong social support, accessible public spaces, and excellent healthcare.',
+      'Pension systems and community programs prioritize the well-being of older adults.',
+      'Enjoy dignified and comfortable retirement in age-friendly cities and towns.',
+    ],
+    image: elderImg,
+    reverse: false,
+  },
+  {
+    title: 'LGBTQ+ Friendly Societies',
+    bullets: [
+      'Many EU countries have strong legal protections and broad social acceptance.',
+      'Same-sex marriage or partnerships are widely recognized across the EU.',
+      'Live authentically and safely in inclusive societies that protect your rights.',
+    ],
+    image: lgbtqImg,
+    reverse: true,
+  },
+  {
+    title: 'Child & Family-Friendly Environment',
+    bullets: [
+      'Europe supports families with generous parental leave and subsidized childcare.',
+      'Free or low-cost education and healthcare are available for children.',
+      'Public parks, safe neighborhoods, and family-focused services are common.',
+    ],
+    image: familyImg,
+    reverse: false,
+  },
+  {
+    title: 'High Quality of Life',
+    bullets: [
+      'EU countries consistently rank among the highest in the world for quality of life.',
+      'Clean air, great food, public transportation, and cultural richness abound.',
+      'Cities are safe, walkable, and offer a balanced, fulfilling lifestyle.',
+    ],
+    image: qualityImg,
+    reverse: true,
+  },
+];
 
-  function WhyEuropeSections() {
-    return (
-      <div className="sections-wrapper">
-        {sections.map((section, index) => {
-          const anchorId = section.title.toLowerCase().replace(/\s+/g, '-');
-  
-          return (
-            <div
-              key={index}
-              id={anchorId} // ✅ her section’a id eklendi
-              className={`section-block ${section.reverse ? 'reverse' : ''}`}
-            >
-              <div className="text-content">
-                <h2>{section.title}</h2>
-                <ul>
-                  {section.bullets.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="image-content">
-                <img src={section.image} alt={section.title} />
-              </div>
+
+function WhyEuropeSections() {
+  return (
+    <div className="sections-wrapper">
+      {sections.map((section, index) => {
+        const anchorId = section.title.toLowerCase().replace(/\s+/g, '-');
+
+        return (
+          <div
+            key={index}
+            id={anchorId}
+            className={`section-block ${section.reverse ? 'reverse' : ''}`}
+          >
+            <div className="text-content">
+              <h2>{section.title}</h2>
+              <ul>
+                {section.bullets.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
             </div>
-          );
-        })}
-      </div>
-    );
-  }
-  
+            <div className="image-content">
+              <img src={section.image} alt={section.title} />
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 
 export default WhyEuropeSections;
