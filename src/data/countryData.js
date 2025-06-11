@@ -80,7 +80,7 @@ import italyImg_1 from '../assets/countries/italy-1.jpg';
 import italyImg_2 from '../assets/countries/italy-2.jpg';
 import italyImg_3 from '../assets/countries/italy-3.jpeg';
 
-import latviaImg from '../assets/countries/latvia-hero.jpg';
+import latviaImg from '../assets/countries/latvia-hero.JPG';
 import latviaImg_1 from '../assets/countries/latvia-1.jpg';
 import latviaImg_2 from '../assets/countries/latvia-2.jpg';
 import latviaImg_3 from '../assets/countries/latvia-3.jpg';
