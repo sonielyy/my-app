@@ -44,6 +44,7 @@
   .hero-buttons {
     display: flex;
     gap: 16px;
+    margin-top: 32px; /* Bu satırı ekleyerek butonları aşağı alırsın */
     justify-content: center;
   }
   
