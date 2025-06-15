@@ -1,8 +1,8 @@
 import './WhyEurope-Sections.css';
-import citizenImg from '../assets/citizenship.jpg';
-import educationImg from '../assets/education2.jpeg';
+import citizenImg from '../assets/citizenship.svg';
+import educationImg from '../assets/education2.jpg';
 import healthcareImg from '../assets/health.jpg';
-import businessImg from '../assets/business.jpeg';
+import businessImg from '../assets/business.jpg';
 import elderImg from '../assets/retirement.jpeg';
 import lgbtqImg from '../assets/lgbt.jpg';
 import familyImg from '../assets/family.jpg';

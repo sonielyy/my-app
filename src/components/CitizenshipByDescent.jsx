@@ -1,5 +1,5 @@
 import './CitizenshipByDescent.css';
-import descentImage from '../assets/ancestor-map.svg'; // Örnek görsel
+import descentImage from '../assets/ancestor-map.png'; // Örnek görsel
 
 function CitizenshipByDescent() {
   return (
@@ -28,8 +28,14 @@ function CitizenshipByDescent() {
 
         <div className="descent-image-container">
           <img src={descentImage} alt="European ancestry map" />
-          <div className="caption">EU citizenship through descent is your legal path home.</div>
+          <div className="caption">
+            EU citizenship through descent is your legal path home.
+            <span className="info-icon" title="Image: European Ancestry Map by Nagihuin & باسم (Wikimedia Commons), CC BY-SA 4.0">
+              ℹ️
+            </span>
+          </div>
         </div>
+
       </div>
     </section>
   );

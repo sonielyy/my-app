@@ -1,12 +1,12 @@
 import './Countries.css';
-import ireland from '../assets/flags/ireland.png';
-import spain from '../assets/flags/spain.png';
-import italy from '../assets/flags/italy.png';
-import germany from '../assets/flags/germany.png';
-import france from '../assets/flags/france.png';
-import netherlands from '../assets/flags/netherlands.png';
-import sweden from '../assets/flags/sweden.png';
-import austria from '../assets/flags/austria.png';
+import ireland from '../assets/flags/ireland.svg';
+import spain from '../assets/flags/spain.svg';
+import italy from '../assets/flags/italy.svg';
+import germany from '../assets/flags/germany.svg';
+import france from '../assets/flags/france.svg';
+import netherlands from '../assets/flags/netherlands.svg';
+import sweden from '../assets/flags/sweden.svg';
+import austria from '../assets/flags/austria.svg';
 import { Link } from 'react-router-dom';
 
 function Countries() {

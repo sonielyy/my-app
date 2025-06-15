@@ -77,3 +77,15 @@
   color: #666;
   font-style: italic;
 }
+
+
+.info-icon {
+  margin-left: 6px;
+  font-size: 14px;
+  cursor: help;
+  color: #888;
+}
+
+.info-icon:hover {
+  color: #555;
+}

@@ -12,7 +12,7 @@ function HeroSection() {
         <h1 className="hero-title">Your European Passport Starts Here</h1>
         <p className="hero-subtext">We help you navigate EU citizenship, from the safest countries in Europe to living in Ireland, Portugal, Spain and beyond.</p>
         <div className="hero-buttons">
-          <button className="hero-btn primary">What We Offer</button>
+          <Link to="/benefits" className="hero-btn primary">What We Offer</Link>
           <Link to="/contact" className="hero-btn secondary">Contact Us</Link>
         </div>
       </div>
