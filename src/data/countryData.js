@@ -41,7 +41,7 @@ import denmarkImg_2 from '../assets/countries/denmark-2.jpg';
 import denmarkImg_3 from '../assets/countries/denmark-3.jpg';
 
 import estoniaImg from '../assets/countries/estonia-hero.JPG';
-import estoniaImg_1 from '../assets/countries/estonia-1.jpg';
+import estoniaImg_1 from '../assets/countries/estonia-1.JPG';
 import estoniaImg_2 from '../assets/countries/estonia-2.jpeg';
 import estoniaImg_3 from '../assets/countries/estonia-3.jpg';
 
